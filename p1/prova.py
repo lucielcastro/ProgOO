@@ -58,12 +58,11 @@ while op != 0:
                return indice
       cpfBuscaTelefone = input('Inoforme CPF do funcionario para cadastro de novo televone: ')
       cadastroBuscado = encontrarFunCadastroTel(cpfBuscaTelefone)
-   
-   
+
    elif op == 4:
       def editarCadastro(key):
          print('1 - Editar nome\n2 - Editar CPF\n3 - Editar cargo\n4 - Editar Salario\n5 - Editar telefofe')
-         op2 = int(input('Escolha uma opção:\n'))
+         op2 = int(input('Escolha uma opção:'))
          if op2 == 1:
             key['nome'] = input('Informe nome')
             print(listaCadastro)
@@ -84,8 +83,8 @@ while op != 0:
             key['telefones'] = input('Informe telefone')
             print(listaCadastro)
             return key
-      cpfEditar = input('Inoforme CPF do funcionario para editar dados: ')
-      editar = encontrarFuncionario(cpfEditar)
+      cpfEditar2 = input('Inoforme CPF do funcionario para editar dados: ')
+      editar = encontrarFuncionario(cpfEditar2)
       editarCadastro(editar)
    if op == 5:
       def removerFuncionário(cpfBusca):
