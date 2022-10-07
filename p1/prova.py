@@ -8,7 +8,7 @@ def cadastrarFuncionaro(nome, cpf, cargo, salario, telefone):
    cadastro = {'nome': nome, 'cpf':cpf, 'cargo':cargo, 'salario':salario, 'telefones':telefone}
    print('Funcionario cadastrado com sucesso! ')
    return cadastro
-
+   
 op = 1
 while op != 0:
    print('1 - Cadastro de Funcionários\n2 - Pesquisar funcionário\n3 - Cadastrar novo telefone\n4 - Editar dados do Funcionário\n5 - Deletar funcionário\n0 - Sair')
