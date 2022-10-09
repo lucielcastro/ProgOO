@@ -1,6 +1,6 @@
 cadastrolist = []
 def cadastrar(cpf, nome, idade, telefone):
-   cadastro = {'cpf': cpf, 'nome':nome, 'idade':idade,'telefone':telefone}
+   cadastro = {'cpf': cpf, 'dados': [nome, idade, telefone]}
    return cadastro
 op = 1
 while op != 0:
@@ -10,10 +10,14 @@ while op != 0:
    op = int(input('Informe opção: '))
    if op == 1:
       cpf = input('Informe CPF: ')
-      nome = input('Informe nome: ')
+      nome = input('Indforme nome: ')
       idade = input('Informe idade: ')
       telefone = input('Informe telefone: ')
       cadastro = cadastrar(cpf,nome,idade, telefone)
       cadastrolist.append(cadastro)
-   else:
+   elif op == 2:
+      for indice in cadastrolist:
+            if indice['dados'][idade] < 18:
+               print('cadastro removido')
+               print(cadastrolist)
       print(cadastrolist)
