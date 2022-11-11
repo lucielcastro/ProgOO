@@ -196,7 +196,7 @@ cliente4.conta_cc.depositar(200)
 cliente4.conta_cc.ver_saldo()
 
 
-#valor = float(input('\nValor a transferir: '))
+#transferencia conta corrente
 cliente3.conta_cc.transferir(30, cliente4.conta_cc)
 cliente3.conta_cc.ver_saldo()
 cliente4.conta_cc.ver_saldo()
